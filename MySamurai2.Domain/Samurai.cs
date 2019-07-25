@@ -10,5 +10,8 @@ namespace MySamurai2.Domain
         public int Id { get; set; }
         [StringLength(50)]
         public string Name { get; set; }
+        public HairStyle? HairStyle { get; set; }
+
+        public List<Quote> Quotes { get; set; }
     }
 }
