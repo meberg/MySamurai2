@@ -11,8 +11,10 @@ namespace MySamurai2.Domain
         [StringLength(50)]
         public string Name { get; set; }
         public string Description { get; set; }
-        public bool Brutal { get; set; }
+        public bool IsBrutal { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
+
+        public List<SamuraiBattle> Samurais { get; set; }
     }
 }

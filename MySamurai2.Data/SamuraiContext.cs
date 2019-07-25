@@ -20,5 +20,11 @@ namespace MySamurai2.Data
             optionsBuilder.UseSqlServer(
               "Server = (localdb)\\mssqllocaldb; Database = MySamurai2;");
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<SamuraiBattle>().HasKey(sb => new { sb.BattleId, sb.SamuraiId });
+        }
+
     }
 }
