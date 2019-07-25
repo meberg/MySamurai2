@@ -10,7 +10,7 @@ namespace MySamurai2.Domain
         public int Id { get; set; }
         [StringLength(50)]
         public string Name { get; set; }
-        public int SkillLevel { get; set; }
+        public int? SkillLevel { get; set; }
 
         public HairStyle? HairStyle { get; set; }
 
