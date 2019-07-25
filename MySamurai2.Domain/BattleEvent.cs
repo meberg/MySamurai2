@@ -8,6 +8,5 @@ namespace MySamurai2.Domain
         [StringLength(1000)]
         public string Summary { get; set; }
         public string Description { get; set; }
-
     }
 }
