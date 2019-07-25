@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MySamurai2.Data;
 
 namespace MySamurai2.Data.Migrations
 {
     [DbContext(typeof(SamuraiContext))]
-    partial class SamuraiContextModelSnapshot : ModelSnapshot
+    [Migration("20190725085518_addedIsMaleBool")]
+    partial class addedIsMaleBool
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,7 +27,7 @@ namespace MySamurai2.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("QuoteStyle");
+                    b.Property<int>("QuoteType");
 
                     b.Property<int>("SamuraiId");
 
@@ -46,12 +48,12 @@ namespace MySamurai2.Data.Migrations
 
                     b.Property<int?>("HairStyle");
 
-                    b.Property<bool?>("IsMale");
-
                     b.Property<string>("Name")
                         .HasMaxLength(50);
 
                     b.Property<int?>("SkillLevel");
+
+                    b.Property<bool?>("isMale");
 
                     b.HasKey("Id");
 

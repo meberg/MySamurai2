@@ -1,6 +1,6 @@
 ﻿namespace MySamurai2.Domain
 {
-    public enum QuoteType
+    public enum QuoteStyle
     {
         Lame,
         Cheesy,

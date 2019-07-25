@@ -9,6 +9,6 @@
         public Samurai Samurai { get; set; }
         public int SamuraiId { get; set; }  // har foreign key till Samurai
 
-        public QuoteType QuoteType { get; set; }
+        public QuoteStyle QuoteStyle { get; set; }
     }
 }

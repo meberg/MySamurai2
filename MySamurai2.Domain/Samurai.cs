@@ -11,6 +11,7 @@ namespace MySamurai2.Domain
         [StringLength(50)]
         public string Name { get; set; }
         public int? SkillLevel { get; set; }
+        public bool? IsMale { get; set; }
 
         public HairStyle? HairStyle { get; set; }
 
