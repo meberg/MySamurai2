@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MySamurai2.Domain
 {
-    class SecretIdentity
+    public class SecretIdentity
     {
         public int Id { get; set; }
         public string RealName { get; set; }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MySamurai2.Domain
 {
-    class Battle
+    public class Battle
     {
         public int Id { get; set; }
         [StringLength(50)]
